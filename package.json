@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:bootstrapDemo1": "node dist/bootstrap-demo1/server/server.mjs",
-    "sass:build":"sass --no-source-map src:css",
+    "sass:build":"sass --no-source-map src",
     "sass:watch":"sass --no-source-map --watch src" 
   },
   "private": true,
