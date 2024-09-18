@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 
 @Component({
@@ -11,4 +11,9 @@ import { HomeComponent } from '../home/home.component';
 })
 export class NavBarComponent {
 
+  constructor(private router:Router){}
+
+  navigate(path:string){
+    this.router.navigateByUrl(path)
+  } 
 }
